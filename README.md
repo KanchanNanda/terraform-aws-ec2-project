@@ -1,12 +1,24 @@
-# AWS Infrastructure Automation using Terraform
+# 🚀 AWS Infrastructure Automation using Terraform
 
-## 📌 Project Overview :-
-This project demonstrates how to provision AWS infrastructure using Terraform (Infrastructure as Code). Instead of creating AWS resources manually, the entire infrastructure is defined in Terraform configuration files and deployed automatically.
+## 📌 Project Overview
 
-## 🏗️ Architecture
+This project demonstrates how to provision AWS infrastructure using **Terraform (Infrastructure as Code)**. Instead of manually creating AWS resources, the complete infrastructure is automated using Terraform configuration files.
 
-The infrastructure consists of:
-- VPC
+The project provisions a complete networking environment along with an EC2 instance running an Nginx web server.
+
+---
+
+## 🏗️ Architecture Diagram
+
+<p align="center">
+  <img src="architecture/architecture.png" alt="AWS Terraform Architecture" width="900">
+</p>
+
+---
+
+## 🏛️ Architecture Components
+
+- Amazon VPC
 - Public Subnet
 - Internet Gateway
 - Route Table
@@ -14,37 +26,25 @@ The infrastructure consists of:
 - EC2 Instance
 - Nginx Web Server
 
-Architecture diagram:
-
-Terraform
-     │
-     ▼
-AWS Provider
-     │
-     ▼
-VPC
-     │
-     ▼
-Public Subnet
-     │
-     ▼
-Internet Gateway
-     │
-     ▼
-Route Table
-     │
-     ▼
-Security Group
-     │
-     ▼
-EC2 Instance
-     │
-     ▼
-Nginx Web Server
+---
 
 ## 📂 Project Structure
 
+```text
 terraform-aws-ec2-project/
+│
+├── architecture/
+│   └── architecture.png
+│
+├── docs/
+│   ├── commands.md
+│   ├── interview-questions.md
+│   └── troubleshooting.md
+│
+├── screenshots/
+│
+├── userdata/
+│   └── install-nginx.sh
 │
 ├── provider.tf
 ├── variables.tf
@@ -56,11 +56,11 @@ terraform-aws-ec2-project/
 ├── security-group.tf
 ├── ec2.tf
 ├── outputs.tf
-├── userdata/
-├── docs/
-├── screenshots/
-├── architecture/
+├── .gitignore
 └── README.md
+```
+
+---
 
 ## 🚀 Technologies Used
 
@@ -70,40 +70,66 @@ terraform-aws-ec2-project/
 - AWS Internet Gateway
 - AWS Route Table
 - AWS Security Group
-- Amazon Linux
+- Amazon Linux 2
 - Nginx
 - Git
 - GitHub
 
+---
+
 ## ⚙️ Terraform Commands
 
+```bash
 terraform init
 terraform fmt
 terraform validate
 terraform plan
 terraform apply
 terraform destroy
+```
+
+---
 
 ## 📸 Project Screenshots
 
-Project screenshots are available in the `screenshots/` folder.
+Project screenshots are available in the **screenshots/** folder.
+
+---
 
 ## 📚 Documentation
 
-- commands.md
-- interview-questions.md
-- troubleshooting.md
+The project includes detailed documentation:
+
+- Commands Reference
+- Interview Questions
+- Troubleshooting Guide
+
+All documentation is available inside the **docs/** folder.
+
+---
 
 ## 🎯 Learning Outcomes
 
+During this project, I learned:
+
 - Infrastructure as Code (IaC)
+- Terraform Basics
 - AWS Networking
-- Terraform State Management
 - EC2 Provisioning
 - Security Groups
+- User Data Automation
+- Terraform State Management
 - Git & GitHub Workflow
-- Automated Infrastructure Deployment
+- Infrastructure Troubleshooting
+
+---
 
 ## 👩‍💻 Author
-     Kanchan
-        DevOps Engineer (Aspiring)
+
+**Kanchan **
+
+Aspiring DevOps Engineer
+
+---
+
+⭐ If you found this project helpful, feel free to star this repository.
