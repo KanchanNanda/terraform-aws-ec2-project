@@ -11,7 +11,7 @@ The project provisions a complete networking environment along with an EC2 insta
 ## 🏗️ Architecture Diagram
 
 <p align="center">
-  <img src="architecture/architecture.png" alt="AWS Terraform Architecture" width="900">
+  <img src="architecture/Architecture.png.png" alt="AWS Terraform Architecture" width="900">
 </p>
 
 ---
@@ -126,7 +126,7 @@ During this project, I learned:
 
 ## 👩‍💻 Author
 
-**Kanchan **
+Kanchan 
 
 Aspiring DevOps Engineer
 
